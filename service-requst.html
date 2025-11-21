@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request – OnCall Fundi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="request-body">
+
+    <header class="request-header">
+        <a href="index.html" class="back-btn">← Back</a>
+        <h1>Submit a Service Request</h1>
+    </header>
+
+    <section class="request-container">
+        <form id="requestForm">
+
+            <label>Service Category</label>
+            <select id="service">
+                <option value="">Select service</option>
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>Carpentry</option>
+                <option>Painting</option>
+                <option>Appliance Repair</option>
+                <option>Cleaning</option>
+            </select>
+
+            <label>Your Location</label>
+            <input type="text" id="location" placeholder="e.g., Nairobi, Westlands">
+
+            <label>Describe the Issue</label>
+            <textarea id="description" placeholder="Provide details about the pr

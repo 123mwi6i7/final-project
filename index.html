@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnCall Fundi - Home Repair Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="nav-left">
+        <img src="images/logo.png" alt="OnCall Fundi Logo" class="nav-logo">
+        <h2 class="brand-name">OnCall Fundi</h2>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="service-requst.html" class="nav-btn">Request Service</a>
+        <a href="fundi-profile.html" class="nav-btn">Fundi Profiles</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+        <a href="booking.html" class="nav-btn">Book a Fundi</a>
+        <a href="login.html" class="nav-btn login-btn">Login</a>
+    </nav>
+</header>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find Trusted Fundis Near You</h1>
+        <p>Plumbers • Electricians • Carpenters • Painters • Repair Experts</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="What service do you need?">
+            <input type="text" placeholder="Location (e.g. Nairobi)">
+            <button>Search</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- POPULAR CATEGORIES -->
+<section class="categories">
+    <h2>Popular Fundi Categories</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <span>🔧</span>
+            <h3>Plumbing</h3>
+        </div>
+
+        <div class="category-card">
+            <span>💡</span>
+            <h3>Electrical</h3>
+        </div>
+
+        <div class="category-card">
+            <span>🪚</span>
+            <h3>Carpentry</h3>
+        </div>
+
+        <div class="category-card">
+            <span>🎨</span>
+            <h3>Painting</h3>
+        </div>
+
+        <div class="category-card">
+            <span>🧹</span>
+            <h3>Cleaning</h3>
+        </div>
+
+        <div class="category-card">
+            <span>🔌</span>
+            <h3>Appliance Repair</h3>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FEATURED FUNDIS (now at bottom) -->
+<section class="fundis">
+    <h2>Featured Fundis</h2>
+
+    <div class="fundi-grid">
+
+        <div class="fundi-card">
+            <div class="fundi-photo"></div>
+            <h3>John Mwangi</h3>
+            <p>Plumber – Nairobi</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="fundi-card">
+            <div class="fundi-photo"></div>
+            <h3>Peter Otieno</h3>
+            <p>Electrician – Thika</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="fundi-card">
+            <div class="fundi-photo"></div>
+            <h3>Samuel Karimi</h3>
+            <p>Carpenter – Kiambu</p>
+            <button>View Profile</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254724742790" target="_blank" class="whatsapp-btn">💬</a>
+
+
+<!-- FIREBASE SCRIPTS -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBQyYT2014hOJBHCNJhQYboMw8grB8AQfw",
+    authDomain: "oncallfundi.firebaseapp.com",
+    projectId: "oncallfundi",
+    storageBucket: "oncallfundi.firebasestorage.app",
+    messagingSenderId: "217300254064",
+    appId: "1:217300254064:web:aed9a694dbd1c15c4963b5",
+    measurementId: "G-VHHPXMS7XX"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+  const auth = firebase.auth();
+</script>
+
+</body>
+</html>

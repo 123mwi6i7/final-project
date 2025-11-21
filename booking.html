@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service – OnCall Fundi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-body">
+
+    <header class="booking-header">
+        <a href="index.html" class="back-btn">← Back</a>
+        <h1>Book a Service</h1>
+    </header>
+
+    <section class="booking-container">
+        <form id="bookingForm">
+
+            <label>Service Needed</label>
+            <select id="service">
+                <option value="">Select service</option>
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>Carpentry</option>
+                <option>Painting</option>
+                <option>Appliance Repair</option>
+            </select>
+
+            <label>Your Location</label>
+            <input type="text" id="location" placeholder="e.g., Nairobi, Westlands">
+
+            <label>Select Date</label>
+            <input type="date" id="date">
+
+            <label>Select Time</label>
+            <input type="time" id="time">
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Describe the issue..."></textarea>
+
+            <label>Upload Photo (optional)</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <button type="submit" class="submit-btn">Submit Booking</button>
+        </form>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup-box">
+            <h2>Booking Sent!</h2>
+            <p>Your service request has been received. A fundi will contact you shortly.</p>
+            <button id="closePopup">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
